@@ -10,7 +10,7 @@
 
 ---
 
-## 🏝️ Island Economy — The Game
+## 🏝️ Agora island 
 ![alt text](image.png)
 
 A playable economic decision tree. You govern a growing island — starting with three castaways producing everything alone, ending (if you're disciplined) as a thriving trade republic. Every choice teaches one real economic concept, backed by an actual country's history.
