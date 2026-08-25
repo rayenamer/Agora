@@ -17,7 +17,7 @@ def main() -> None:
     root = tk.Tk()
     root.geometry("900x700")
     root.minsize(800, 600)
-    root.title("Island Economy — The Game")
+    root.title("Agora island")
     root.configure(bg="#1a1a1a")
 
     game_data = load_game_data(DATA_PATH)
