@@ -1,0 +1,500 @@
+{
+  "rounds": {
+    "1": {
+      "title": "THE ISLAND",
+      "year": 1,
+      "population": 3,
+      "narrative": "You are the government. Three islanders -- Alex, Blake, and Casey -- each hunt, fish, build shelter, and gather alone. They produce enough to survive, but barely. Life is subsistence.",
+      "scenario": "A storm destroys Casey's shelter. Alex and Blake could help, but there's no rule about who owns what. Blake asks: should we establish rules about ownership?",
+      "sketch_key": "round_1_autarky",
+      "economic_terms": [
+        {
+          "term": "Property Rights",
+          "definition": "Recognized claims over resources and output -- the precondition that makes voluntary exchange possible.",
+          "consequence": "By establishing property rights, each islander now owns what they produce. This creates the trust needed for trade and specialization in the rounds ahead.",
+          "realworld": "Countries with strong, enforced property rights -- Singapore, Canada, Switzerland -- consistently see higher investment, longer time horizons, and more specialization than countries without them."
+        }
+      ],
+      "choices": {
+        "A": {
+          "text": "Establish property rights -- everyone owns what they produce.",
+          "leads_to": "round_2",
+          "term_index": 0
+        },
+        "B": {
+          "text": "Leave everything open-access -- no ownership rules.",
+          "leads_to": "E5",
+          "term_index": null
+        },
+        "C": {
+          "text": "Grant all property to Alex and Blake only; Casey owns nothing.",
+          "leads_to": "E6",
+          "term_index": null
+        }
+      }
+    },
+    "2": {
+      "title": "THE TRADE",
+      "year": 2,
+      "population": 3,
+      "narrative": "Blake realizes: \"I'm good at fishing. I hate hunting. Alex hates fishing but loves hunting.\" Blake proposes: \"I fish. You hunt. We trade.\"",
+      "scenario": "The government has a choice: allow this specialization, or require everyone to keep producing everything themselves?",
+      "sketch_key": "round_2_specialization",
+      "economic_terms": [
+        {
+          "term": "Division of Labor, Gains from Trade & Comparative Advantage",
+          "definition": "Specializing in what you're relatively best at, then trading, makes everyone better off -- even if one party is better at everything.",
+          "consequence": "By allowing free trade, Blake fishes and Alex hunts full-time instead of doing both badly. Total output rises immediately, and the island discovers gains from trade.",
+          "realworld": "Adam Smith's pin factory and Ricardo's theory of comparative advantage explain why even small, resource-poor economies like Hong Kong or Switzerland can grow rich through specialization and trade."
+        }
+      ],
+      "choices": {
+        "A": {
+          "text": "Allow free trade and specialization.",
+          "leads_to": "round_3",
+          "term_index": 0
+        },
+        "B": {
+          "text": "Require self-sufficiency quotas; forbid specialization.",
+          "leads_to": "E13",
+          "term_index": null
+        },
+        "C": {
+          "text": "Only allow Alex and Blake to trade; Casey must stay alone.",
+          "leads_to": "E9",
+          "term_index": null
+        }
+      }
+    },
+    "3": {
+      "title": "GROWTH",
+      "year": 3,
+      "population": 5,
+      "narrative": "Two new people -- Dana and Elliot -- arrive. With 5 people, specialization deepens. Output per person rises 30%. But barter is messy: \"I have 20 fish. I want tools. But the tool-maker wants meat, not fish.\"",
+      "scenario": "The government must decide: adopt a medium of exchange to replace barter?",
+      "sketch_key": "round_3_money_choice",
+      "economic_terms": [
+        {
+          "term": "Medium of Exchange, Commodity Money & the Double Coincidence of Wants",
+          "definition": "A medium of exchange is a good everyone accepts in trade, eliminating the need to find someone who wants exactly what you have (the 'double coincidence of wants').",
+          "consequence": "By adopting gold as money, trade no longer requires two people to want each other's exact goods. Anyone can sell for gold and buy from someone else entirely. Trade volume triples.",
+          "realworld": "Gold, silver, cowrie shells, and salt have all served as commodity money throughout history precisely because they solved the double-coincidence problem before paper currency existed."
+        }
+      ],
+      "choices": {
+        "A": {
+          "text": "Adopt gold as money.",
+          "leads_to": "round_4",
+          "term_index": 0
+        },
+        "B": {
+          "text": "Keep the barter system.",
+          "leads_to": "E7",
+          "term_index": null
+        },
+        "C": {
+          "text": "Decree paper money -- no gold backing.",
+          "leads_to": "E8",
+          "term_index": null
+        }
+      }
+    },
+    "4": {
+      "title": "BANKING",
+      "year": 5,
+      "population": 5,
+      "narrative": "Gold works. Trade volume triples. Elliot (the trader) says: \"People are burying gold at home. I'll hold it and give them receipts.\" Elliot opens a bank.",
+      "scenario": "The government must decide: regulate banking, or let it run free?",
+      "sketch_key": "round_4_banking",
+      "economic_terms": [
+        {
+          "term": "Financial Intermediary, Warehouse Banking & Representative Money",
+          "definition": "A financial intermediary stores commodity money and issues paper claims ('representative money') redeemable for it -- the origin of banking and the gold standard.",
+          "consequence": "By licensing Elliot's bank and requiring 50% gold reserves, paper notes stay trustworthy and redeemable. Banking expands trade without abandoning sound money.",
+          "realworld": "The gold standard, used by most major economies from the 1870s to 1971, worked because notes were reliably redeemable in gold -- reserve requirements existed precisely to protect that trust."
+        },
+        {
+          "term": "Fractional-Reserve Banking & Credit Expansion",
+          "definition": "Issuing more paper claims than the reserves actually held -- 'fractional' reserve banking funds booms but risks a collapse in trust.",
+          "consequence": "By licensing the bank but never enforcing reserves, Elliot issues far more notes than he holds in gold. It works until everyone asks for their gold back at once.",
+          "realworld": "Nearly every historical banking panic -- the U.S. in 1907 and 1929, and countless emerging-market crises -- traces back to reserves that couldn't cover the claims issued against them."
+        }
+      ],
+      "choices": {
+        "A": {
+          "text": "License the bank and require reserves (50% gold backing).",
+          "leads_to": "round_5",
+          "term_index": 0
+        },
+        "B": {
+          "text": "License the bank but never enforce reserves.",
+          "leads_to": "E4",
+          "term_index": 1
+        },
+        "C": {
+          "text": "Ban banking outright.",
+          "leads_to": "E10",
+          "term_index": null
+        }
+      }
+    },
+    "5": {
+      "title": "CAPITAL",
+      "year": 7,
+      "population": 5,
+      "narrative": "Casey says: \"I want to build a fishing net. It costs 100 gold. I have 50. Can I borrow?\" Elliot agrees. Casey builds it. Fishing output explodes 5x.",
+      "scenario": "The government must decide: support entrepreneurs, or suppress them?",
+      "sketch_key": "round_5_capital",
+      "economic_terms": [
+        {
+          "term": "Capital Investment, Interest & Time Preference",
+          "definition": "Capital investment means giving up consumption today to build a tool that raises output tomorrow. Interest is the price of that trade-off -- the value of time itself.",
+          "consequence": "By letting Casey borrow to build a fishing net, the island trades 50 gold of present consumption for a tool that multiplies future fishing output five-fold.",
+          "realworld": "Every industrial economy grew by channeling savings into capital -- factories, machines, infrastructure -- through banks willing to lend against future, not just present, production."
+        }
+      ],
+      "choices": {
+        "A": {
+          "text": "Support entrepreneurs; allow low-tax borrowing.",
+          "leads_to": "round_6",
+          "term_index": 0
+        },
+        "B": {
+          "text": "Suppress entrepreneurs with high taxes.",
+          "leads_to": "E11",
+          "term_index": null
+        },
+        "C": {
+          "text": "Only allow the elite to borrow.",
+          "leads_to": "E6",
+          "term_index": null
+        }
+      }
+    },
+    "6": {
+      "title": "PRODUCTIVITY SURGE",
+      "year": 10,
+      "population": 5,
+      "narrative": "Casey's net works. Blake builds better hooks. Dana makes better ropes. Elliot invents a fish smoker. Tools improve. Costs fall 40%. At lower prices, people buy more.",
+      "scenario": "The government must control inflation: keep the money supply aligned with real output.",
+      "sketch_key": "round_6_productivity",
+      "economic_terms": [
+        {
+          "term": "Productivity Gain, Technological Progress & Entrepreneurship",
+          "definition": "When entrepreneurs risk capital on better tools and methods, the same labor produces more output -- shifting supply outward and lowering prices (Schumpeter's 'creative destruction').",
+          "consequence": "With entrepreneurship supported and reserves enforced, better nets, hooks, ropes, and smokers cut costs 40%. Falling prices raise real wages without printing a single extra coin.",
+          "realworld": "The Industrial Revolution's productivity gains -- from the spinning jenny to the steam engine -- followed exactly this pattern: entrepreneurs financing tools that lowered costs and raised living standards."
+        },
+        {
+          "term": "Quantity Theory of Money & Deflation",
+          "definition": "MV = PQ: if the money supply shrinks faster than output grows, prices must fall -- and falling prices can make people hoard cash instead of spending or investing it.",
+          "consequence": "By over-tightening reserves and shrinking the money supply, prices fall year after year. Islanders delay purchases waiting for even lower prices, and investment dries up.",
+          "realworld": "Japan's 'Lost Decade' showed how a shrinking money supply can trap a technologically sound economy in a low-output equilibrium for fifteen years or more."
+        },
+        {
+          "term": "Fractional-Reserve Banking & Credit Expansion",
+          "definition": "Issuing unlimited notes against limited gold reserves floods the economy with money that isn't backed by real output.",
+          "consequence": "By letting banks issue unlimited money, credit floods the island faster than fishermen and farmers can produce real goods. Prices spiral upward until trust in money breaks.",
+          "realworld": "Every hyperinflation on record -- Weimar Germany, Zimbabwe, Venezuela -- began with money issued far faster than real output could grow."
+        }
+      ],
+      "choices": {
+        "A": {
+          "text": "Enforce strict reserve requirements.",
+          "leads_to": "round_7",
+          "term_index": 0
+        },
+        "B": {
+          "text": "Over-tighten reserves; shrink the money supply.",
+          "leads_to": "E17",
+          "term_index": 1
+        },
+        "C": {
+          "text": "Ignore reserves; let banks issue unlimited money.",
+          "leads_to": "E4",
+          "term_index": 2
+        }
+      }
+    },
+    "7": {
+      "title": "STABILITY",
+      "year": 12,
+      "population": 5,
+      "narrative": "Five years of 7% growth. Real wages up 40%. Island prospers. Pressure appears: the fishing ground is getting crowded. Fish stocks falling. Soon it will collapse.",
+      "scenario": "The government must decide: regulate the fishing ground before collapse, or leave it open?",
+      "sketch_key": "round_7_commons",
+      "economic_terms": [
+        {
+          "term": "Tragedy of the Commons -- Prevented",
+          "definition": "A resource nobody owns individually gets over-exploited, because no single user bears the full cost of their own use of it.",
+          "consequence": "By setting fishing quotas now, before the stock collapses, the island avoids the tragedy of the commons entirely. The fishery stays healthy for the rounds ahead.",
+          "realworld": "Icelandic and Norwegian fisheries, regulated early with enforced quotas, have sustained yields for generations."
+        },
+        {
+          "term": "Tragedy of the Commons -- Collapse",
+          "definition": "A resource nobody owns individually gets over-exploited, because no single user bears the full cost of their own use of it.",
+          "consequence": "By leaving the fishing ground open, every fisherman fishes harder to get their share before others do. The stock collapses entirely, and the island's food supply goes with it.",
+          "realworld": "Easter Island's deforestation and collapsed fisheries show what happens when a shared resource has no rules and no enforcement -- total collapse, followed by famine and conflict."
+        },
+        {
+          "term": "Tragedy of the Commons -- Late Regulation",
+          "definition": "A resource nobody owns individually gets over-exploited, because no single user bears the full cost of their own use of it.",
+          "consequence": "By waiting until the fishery is already in trouble to impose quotas, the island avoids total collapse -- but stocks fall hard first, and recovery takes decades.",
+          "realworld": "Iceland's North Atlantic cod fishery crashed in the 1970s despite warning signs; quotas imposed only after the crash brought partial recovery, but only after a lost decade."
+        }
+      ],
+      "choices": {
+        "A": {
+          "text": "Regulate now; set fishing quotas.",
+          "leads_to": "round_8",
+          "term_index": 0
+        },
+        "B": {
+          "text": "Leave it open; let people fish freely.",
+          "leads_to": "E3",
+          "term_index": 1
+        },
+        "C": {
+          "text": "Regulate late, after partial collapse.",
+          "leads_to": "E15",
+          "term_index": 2
+        }
+      }
+    },
+    "8": {
+      "title": "PROTECTED COMMONS",
+      "year": 13,
+      "population": 5,
+      "narrative": "Government sets quotas. Each person fishes at most 200 fish/year, with heavy fines for violations. Five years later, fish populations are stable. A merchant ship appears -- from another island with tropical fruit, spices, and copper.",
+      "scenario": "The government must decide: open external trade, or stay closed?",
+      "sketch_key": "round_8_ship",
+      "economic_terms": [
+        {
+          "term": "External Trade, Comparative Advantage at Scale & Exchange Rates",
+          "definition": "The logic of specialization and trade applies between whole communities, not just individuals -- but trading across currencies requires a working exchange-rate mechanism.",
+          "consequence": "By opening trade freely with the other island, both economies specialize further -- yours in processed fish, theirs in fruit and spices -- and both sides get richer.",
+          "realworld": "Post-war trade liberalization between economies like South Korea and its trading partners followed exactly this logic: open trade let each side specialize in what it did best."
+        },
+        {
+          "term": "External Trade -- Fragmented Currencies",
+          "definition": "Comparative advantage between communities goes unrealized when there's no working exchange-rate mechanism to translate prices across currencies.",
+          "consequence": "Trade opens on paper, but with no way to convert gold to the other island's silver at a stable rate, almost no one actually trades. The opportunity sits mostly unused.",
+          "realworld": "Pre-euro Europe's tangle of currencies -- Deutsche Mark, Franc, Lira, Peseta -- left real comparative advantage unrealized for decades until the 1999 monetary union."
+        }
+      ],
+      "choices": {
+        "A": {
+          "text": "Open trade freely.",
+          "leads_to": "round_9",
+          "term_index": 0
+        },
+        "B": {
+          "text": "Close borders; protect local producers.",
+          "leads_to": "E2",
+          "term_index": null
+        },
+        "C": {
+          "text": "Open trade, but with no exchange-rate mechanism.",
+          "leads_to": "E14",
+          "term_index": 1
+        }
+      }
+    },
+    "9": {
+      "title": "EXTERNAL TRADE",
+      "year": 14,
+      "population": 5,
+      "narrative": "Ships arrive regularly. Your island specializes in processed fish; the other specializes in fruit. Both prosper. Comparative advantage applies at the island level -- incomes rise 30%. Elliot handles currency exchange between your gold and their silver.",
+      "scenario": "The government faces its final choice: maintain all regulations, or relax them for insiders?",
+      "sketch_key": "round_9_discipline",
+      "economic_terms": [],
+      "choices": {
+        "A": {
+          "text": "Maintain all regulations; stay disciplined.",
+          "leads_to": "E1",
+          "term_index": null
+        },
+        "B": {
+          "text": "Relax regulations; let officials exempt insiders.",
+          "leads_to": "E16",
+          "term_index": null
+        }
+      }
+    }
+  },
+  "endings": {
+    "E1": {
+      "name": "The Prosperous Republic",
+      "emoji": "⭐",
+      "narrative": "All institutions worked in harmony. Property rights, trade, sound money, banking, capital investment, and protected commons combined into decades of exponential growth.",
+      "country": "Singapore",
+      "stats": { "gdp_per_capita": 72000, "annual_growth": 7.0, "gini": 0.42, "stability_years": 58, "population_final": 250 },
+      "realworld": "Singapore: strong property rights, regulated banking, protected commons, open trade. GDP/capita $72,000, 7% growth, low inequality."
+    },
+    "E2": {
+      "name": "Prosperous but Insular",
+      "emoji": "🏯",
+      "narrative": "Every internal institution worked perfectly -- but the island closed its doors to outside trade, capping growth well below its true potential.",
+      "country": "Japan (1980s-1990s)",
+      "stats": { "gdp_per_capita": 39000, "annual_growth": 4.5, "gini": 0.30, "stability_years": 40, "population_final": 180 },
+      "realworld": "Japan (1980s-1990s): world-class manufacturing and banking, but protectionist trade policy limited the growth ceiling. GDP/capita $39,000, 4-5% growth, Gini 0.30."
+    },
+    "E3": {
+      "name": "Commons Crisis",
+      "emoji": "💔",
+      "narrative": "The commons were never protected. Fishing grounds and resources were stripped bare by unrestrained use, and the island's prosperity reversed into catastrophic collapse.",
+      "country": "Easter Island",
+      "stats": { "gdp_per_capita": 400, "annual_growth": -12.0, "gini": 0.55, "stability_years": 2, "population_final": 2 },
+      "realworld": "Easter Island: population collapsed from roughly 15,000 to under 2,000 after deforestation destroyed fishing grounds and food supply -- societal collapse, warfare, starvation."
+    },
+    "E4": {
+      "name": "Inflation Crisis",
+      "emoji": "💸",
+      "narrative": "Money was issued far beyond what gold reserves could back. Trust in currency shattered, hyperinflation destroyed savings, and the island reverted toward barter.",
+      "country": "Venezuela (2012-present)",
+      "stats": { "gdp_per_capita": 3000, "annual_growth": -8.0, "gini": 0.50, "stability_years": 5, "population_final": 60 },
+      "realworld": "Venezuela: GDP/capita fell 75% from its peak; hyperinflation hit 2,600% annually in 2020; the currency was reset three times in a decade."
+    },
+    "E5": {
+      "name": "Stagnation: No Property Rights",
+      "emoji": "🔒",
+      "narrative": "Without property rights, no one had reason to specialize or trade. The island remained locked in permanent autarky -- everyone producing everything alone, forever.",
+      "country": "North Korea",
+      "stats": { "gdp_per_capita": 1300, "annual_growth": 0.0, "gini": 0.35, "stability_years": 70, "population_final": 3 },
+      "realworld": "North Korea: GDP/capita around $1,300, essentially flat growth since the 1990s, virtually no trade, and only the state holds real claims on output."
+    },
+    "E6": {
+      "name": "Extractive Elite State",
+      "emoji": "👑",
+      "narrative": "Property rights and capital access were granted only to a ruling clique. The elite prospered while most islanders lived at subsistence, propping up wealth they never shared.",
+      "country": "Saudi Arabia (1970s-1990s)",
+      "stats": { "gdp_per_capita": 27000, "annual_growth": 3.0, "gini": 0.45, "stability_years": 35, "population_final": 40 },
+      "realworld": "Saudi Arabia (1970s-1990s): oligarchic control of oil wealth by the Al Saud family; moderate aggregate growth masked high inequality and subsistence wages for most."
+    },
+    "E7": {
+      "name": "Closed Barter Economy",
+      "emoji": "🤝",
+      "narrative": "Specialization took hold, but without money, every trade required a double coincidence of wants. Growth crawled forward, slow but real, for generations.",
+      "country": "Medieval Europe (pre-1200)",
+      "stats": { "gdp_per_capita": 500, "annual_growth": 0.1, "gini": 0.40, "stability_years": 100, "population_final": 8 },
+      "realworld": "Medieval Europe (pre-1200): craftspeople, knights, and monks specialized, but barter throttled trade volume -- stable, but with a permanently low income ceiling."
+    },
+    "E8": {
+      "name": "Fiat Overreach Crisis",
+      "emoji": "🏦",
+      "narrative": "Paper money was decreed into existence with no backing. It worked -- until the first shock, when trust evaporated overnight and the monetary system had to be rebuilt from scratch.",
+      "country": "Argentina (2001-2002)",
+      "stats": { "gdp_per_capita": 6000, "annual_growth": -3.0, "gini": 0.45, "stability_years": 3, "population_final": 15 },
+      "realworld": "Argentina (2001-2002): the peso's peg to the dollar collapsed; bank runs drained ATMs and the currency devalued 75% overnight, forcing a monetary policy rethink."
+    },
+    "E9": {
+      "name": "Crony Trade",
+      "emoji": "🤝",
+      "narrative": "Trade was opened, but only to a favored subgroup. A connected few captured the gains from specialization while everyone else was locked out.",
+      "country": "Russia (1990s-2020s)",
+      "stats": { "gdp_per_capita": 12000, "annual_growth": 2.0, "gini": 0.41, "stability_years": 20, "population_final": 35 },
+      "realworld": "Russia (1990s-2020s): oligarchs captured major export industries; ordinary citizens were excluded from capital, licenses, and major trade -- the top 1% holds 35% of wealth."
+    },
+    "E10": {
+      "name": "Capital Starvation",
+      "emoji": "🚫",
+      "narrative": "Banking was banned outright. With no way to borrow, no one could finance new tools, and productivity stayed stuck at subsistence levels.",
+      "country": "Papua New Guinea (modern)",
+      "stats": { "gdp_per_capita": 3500, "annual_growth": 2.0, "gini": 0.38, "stability_years": 40, "population_final": 12 },
+      "realworld": "Papua New Guinea (modern): under 10% of the population has banking access; credit markets are virtually nonexistent, blocking capital investment."
+    },
+    "E11": {
+      "name": "Failed Entrepreneurship",
+      "emoji": "📉",
+      "narrative": "Entrepreneurs were taxed and licensed into irrelevance. New tools and methods stopped appearing, and productivity flatlined while the rest of the world raced ahead.",
+      "country": "Soviet Union (1960s-1980s)",
+      "stats": { "gdp_per_capita": 8000, "annual_growth": 0.0, "gini": 0.25, "stability_years": 25, "population_final": 20 },
+      "realworld": "Soviet Union (1960s-1980s): entrepreneurship was effectively illegal; productivity stagnated after the 1970s and the economy could not compete technologically."
+    },
+    "E12": {
+      "name": "Demand Collapse",
+      "emoji": "📦",
+      "narrative": "Productivity surged, but the system meant to turn output into consumption broke down. Goods piled up unsold, producers lost incentive, and shortages appeared despite abundance.",
+      "country": "Soviet Union (1990-1991)",
+      "stats": { "gdp_per_capita": 5000, "annual_growth": -15.0, "gini": 0.48, "stability_years": 2, "population_final": 15 },
+      "realworld": "Soviet Union (1990-1991): perestroika loosened prices and production surged temporarily, but the collapse of central planning meant real output fell 14% as demand collapsed and rationing began."
+    },
+    "E13": {
+      "name": "Isolationist Relapse",
+      "emoji": "🌾",
+      "narrative": "The government mandated self-sufficiency quotas and dismantled specialization. Trade networks were torn apart in the name of self-reliance, and the island reverted to autarky under famine conditions.",
+      "country": "China, Cultural Revolution (1966-1976)",
+      "stats": { "gdp_per_capita": 1000, "annual_growth": -30.0, "gini": 0.60, "stability_years": 1, "population_final": 2 },
+      "realworld": "China's Cultural Revolution (1966-1976): Mao's communes ordered village-level self-sufficiency, dismantling specialization; the resulting Great Famine killed tens of millions."
+    },
+    "E14": {
+      "name": "Fragmented Currencies",
+      "emoji": "💱",
+      "narrative": "External trade opened, but with no shared exchange-rate mechanism, price signals never translated cleanly across currencies. Trade stayed well below its true potential.",
+      "country": "Pre-EU Europe (1970s-1980s)",
+      "stats": { "gdp_per_capita": 12000, "annual_growth": 2.0, "gini": 0.35, "stability_years": 15, "population_final": 25 },
+      "realworld": "Pre-EU Europe (1970s-1980s): the Deutsche Mark, Franc, Lira, and Peseta floated against each other with volatile exchange rates, leaving comparative advantage unrealized until the 1999 euro launch."
+    },
+    "E15": {
+      "name": "Overexploited Commons",
+      "emoji": "🎣",
+      "narrative": "The commons were regulated only after overuse had already done serious damage. Quotas eventually stabilized the fishery, but recovery took decades and cost a generation of growth.",
+      "country": "Iceland (North Atlantic Cod Fishery)",
+      "stats": { "gdp_per_capita": 28000, "annual_growth": 1.5, "gini": 0.30, "stability_years": 30, "population_final": 20 },
+      "realworld": "Iceland (1970s-2000s): cod stocks crashed despite warnings; quotas imposed in the 1980s brought a 50% stock recovery by 2000, but only after a lost decade of depression and emigration."
+    },
+    "E16": {
+      "name": "Regulatory Capture",
+      "emoji": "🎭",
+      "narrative": "On paper, every rule was in place. In practice, officials quietly exempted connected insiders. Growth looks as strong as the best-run economies -- but the foundation is hollow.",
+      "country": "China (2000s-present)",
+      "stats": { "gdp_per_capita": 11000, "annual_growth": 9.0, "gini": 0.47, "stability_years": 10, "population_final": 150 },
+      "realworld": "China (2000s-present): state-owned enterprises are often exempt from rules applied to private firms; aggregate growth looks like ~9% GDP growth, but hidden extraction and captured regulation build fragility beneath the surface."
+    },
+    "E17": {
+      "name": "Hyper-Deflation",
+      "emoji": "❄️",
+      "narrative": "The money supply was shrunk too far. Prices fell year after year, people hoarded cash waiting for further declines, and investment dried up despite otherwise sound institutions.",
+      "country": "Japan, Lost Decade (1990s-2000s)",
+      "stats": { "gdp_per_capita": 38000, "annual_growth": 0.5, "gini": 0.32, "stability_years": 20, "population_final": 120 },
+      "realworld": "Japan's Lost Decade (1990s-2000s): prices fell 1-2% annually for 15+ years; consumers delayed spending, firms couldn't profitably borrow even near zero rates, and growth stagnated around 0.5%."
+    },
+    "E18": {
+      "name": "Subsistence Equilibrium with Limited Trade",
+      "emoji": "🌱",
+      "narrative": "Every institution was built with care -- property rights, banking, capital formation, protected commons -- but trade opened only gradually. The result was steady, realistic prosperity rather than a spectacular boom.",
+      "country": "South Korea (1960s-1980s)",
+      "stats": { "gdp_per_capita": 6000, "annual_growth": 6.0, "gini": 0.35, "stability_years": 25, "population_final": 100 },
+      "realworld": "South Korea (1960s-1980s): property rights, banking, and capital formation all functioning; commons regulated early; modest, gradually opening trade; solid ~6% annual growth -- a stable, mixed-outcome economy."
+    }
+  },
+  "sketches": {
+    "round_1_autarky": "   YEAR 1 -- AUTARKY\n\n    A        B        C\n   /|\\      /|\\      /|\\\n   / \\      / \\      / \\\n  hunt     fish    shelter\n\n  Each islander survives\n  alone. No trade, no\n  ownership rules -- yet.",
+    "round_2_specialization": "  YEAR 2 -- SPECIALIZATION?\n\n  Blake: \"I fish, hate hunt\"\n  Alex:  \"I hunt, hate fish\"\n\n  A(hunt) <--trade--> B(fish)\n              |\n            C(?)\n\n  Allow trade, or force\n  everyone to do it all?",
+    "round_3_money_choice": "  YEAR 3 -- TOO MANY GOODS\n\n  A(hunt) B(fish) C(gather)\n     \\       |      /\n   D(craft)     E(trade)\n      (5 islanders now)\n\n  \"20 fish for tools? The\n   toolmaker wants meat...\"\n  Need a medium of exchange.",
+    "round_4_banking": "  YEAR 5 -- GOLD & BANKING\n\n   Gold adopted. Trade x3.\n\n    Elliot's vault\n     _________\n    | # # # # |  gold\n    |_________|\n     |       |\n   notes    notes\n  (claims on the gold)",
+    "round_5_capital": "  YEAR 7 -- CAPITAL\n\n  Casey: \"100 gold for a net.\n          I have 50. Borrow?\"\n\n   50 gold (loan)\n        |\n        v\n   [ FISHING NET ]\n        |\n        v\n   fishing output x5",
+    "round_6_productivity": "  YEAR 10 -- TOOLS IMPROVE\n\n  better net + hooks + rope\n       + fish smoker\n            |\n            v\n      costs down 40%\n            |\n      people buy more --\n      keep money supply\n      matched to output?",
+    "round_7_commons": "  YEAR 12 -- COMMONS STRAIN\n\n  ~~~~~~ FISHING GROUND ~~~~~\n  |############......|  60%\n\n  5 years of 7% growth.\n  Fish stocks falling fast.\n  Regulate before collapse?",
+    "round_8_ship": "  YEAR 13 -- A SHIP ARRIVES\n\n   YOUR ISLAND       SHIP\n   fish, tools   <==  fruit,\n   gold                spices,\n                       copper\n\n  Open trade, close borders,\n  or trade with no exchange\n  rate?",
+    "round_9_discipline": "  YEAR 14 -- THE LAST CHOICE\n\n  YOUR ISLAND <=trade=> OTHER ISLAND\n   gold <---exchange---> silver\n\n  Incomes +30%. Everything\n  works. Stay disciplined,\n  or let insiders cut in?",
+    "ending_E1": "   *** THE PROSPEROUS REPUBLIC ***\n\n   #################### pop 250\n   growth  7.0%/yr\n   GDP/cap $72,000\n   Gini    0.42 (low)\n\n        SINGAPORE",
+    "ending_E2": "   PROSPEROUS BUT INSULAR\n\n   ###############..... capped\n   growth 4-5%/yr (ceiling)\n   GDP/cap $39,000\n   borders: CLOSED\n\n        JAPAN 1980s",
+    "ending_E3": "   COMMONS CRISIS\n\n   ##.................. collapse\n   fish stock: GONE\n   population: crashing\n\n        EASTER ISLAND",
+    "ending_E4": "   INFLATION CRISIS\n\n   $$$$$$$$$$$$$$$$$$$$ >2600%/yr\n   trust in money: BROKEN\n   reverting to barter...\n\n        VENEZUELA",
+    "ending_E5": "   STAGNATION\n\n   A   B   C   (still alone)\n   no property, no trade\n   growth: 0.0%/yr forever\n\n        NORTH KOREA",
+    "ending_E6": "   EXTRACTIVE ELITE STATE\n\n   [ELITE] #################\n   [REST]  #.................\n   Gini 0.45 (high)\n\n        SAUDI ARABIA 1970s-90s",
+    "ending_E7": "   CLOSED BARTER ECONOMY\n\n   fish <-> tools <-> meat\n   (only if wants match)\n   growth: 0.1%/yr\n\n        MEDIEVAL EUROPE",
+    "ending_E8": "   FIAT OVERREACH CRISIS\n\n   1 note \"=\" 1 gold (decree)\n        |\n    BANK RUN\n        |\n   back to the drawing board\n\n        ARGENTINA 2001-02",
+    "ending_E9": "   CRONY TRADE\n\n   [insiders]      ###########\n   [everyone else] #.........\n   Gini 0.41 (high)\n\n        RUSSIA 1990s-2020s",
+    "ending_E10": "   CAPITAL STARVATION\n\n   banking:    BANNED\n   borrowing:  0%\n   tools: never financed\n\n        PAPUA NEW GUINEA",
+    "ending_E11": "   FAILED ENTREPRENEURSHIP\n\n   new tools: taxed, licensed,\n              blocked\n   productivity: FLAT\n\n        SOVIET UNION 1970s-80s",
+    "ending_E12": "   DEMAND COLLAPSE\n\n   production ##########  UP\n   demand     #.........  DOWN\n   goods unsold, shortages\n\n        SOVIET UNION 1990-91",
+    "ending_E13": "   ISOLATIONIST RELAPSE\n\n   specialization: DISMANTLED\n   quotas: mandatory\n   back to autarky\n\n        CHINA, CULTURAL REVOLUTION",
+    "ending_E14": "   FRAGMENTED CURRENCIES\n\n   gold <-??-> silver <-??->\n   no exchange rate mechanism\n   trade: mostly unused\n\n        PRE-EU EUROPE",
+    "ending_E15": "   OVEREXPLOITED COMMONS\n\n   fish stock ##......... 50%\n   (regulated too late)\n   recovery: 30 years\n\n        ICELAND COD FISHERY",
+    "ending_E16": "   REGULATORY CAPTURE\n\n   rules on paper:        YES\n   enforced for insiders: NO\n   growth looks like 9%/yr...\n   ...but it's hollow\n\n        CHINA 2000s-present",
+    "ending_E17": "   HYPER-DEFLATION\n\n   prices: falling, falling...\n   people: hoarding cash\n   investment: frozen\n\n        JAPAN, LOST DECADE",
+    "ending_E18": "   SUBSISTENCE EQUILIBRIUM\n\n   institutions: all working\n   trade: modest, gradual\n   growth: steady 6%/yr\n\n        SOUTH KOREA 1960s-80s"
+  }
+}
